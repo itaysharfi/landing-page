@@ -81,7 +81,7 @@
         grid-template-columns: 30% 70%;
         justify-items: start;
         text-align: left;
-        align-items: start; 
+        align-items: start;
       }
       .hero-grid > div {
         justify-self: center;
@@ -93,7 +93,13 @@
     .why-title { color: var(--clr-primary); font-size: 2rem; text-transform: uppercase; text-align: center; margin-bottom: var(--gap); }
     .why-copy p { line-height: 1.6; }
     .about { background: var(--clr-light); }
-    .about-grid { display: grid; gap: var(--gap); align-items: start; text-align: center; }
+    .about-grid {
+      display: grid;
+      gap: var(--gap);
+      align-items: start;
+      text-align: center;
+      justify-items: center;
+    }
     .about-grid img { width: 220px; }
     .about h2 { color: var(--clr-primary); font-size: 1.9rem; margin-bottom: 1rem; }
     .about-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
