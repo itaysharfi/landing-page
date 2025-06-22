@@ -6,9 +6,9 @@
   <title>The Job of Landing a Job – Itay Sharfi</title>
   <style>
     :root {
-      --clr-primary: #ff6c26;
+      --clr-primary: #2E7D32;
+      --clr-light: #b0cddf;
       --clr-dark: #0d0149;
-      --clr-light: #eadcd8;
       --clr-white: #ffffff;
       --max-width: 720px;
       --gap: 2rem;
@@ -28,74 +28,42 @@
     }
     h1 {
       font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
     h2 {
       font-weight: 800;
+      text-transform: uppercase;
     }
     p {
       margin: 0 0 1rem;
       font-size: 0.95rem;
     }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 4px;
-    }
-    /* Container */
-    .wrap {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-    header, section {
-      padding: 3rem 0;
-    }
-    /* HERO */
-    .hero {
-      background: var(--clr-light);
-    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; border-radius: 4px; }
+    .wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 1rem; }
+    header, section { padding: 3rem 0; }
+    .hero { background: var(--clr-light); }
     .hero-grid {
       display: grid;
       gap: var(--gap);
       justify-items: center;
       text-align: center;
+      align-items: start;
     }
-    .hero-grid img {
-      width: 200px;
-    }
+    .hero-grid img { width: 200px; }
     .label {
+      display: block;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--clr-primary);
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
       font-size: 2rem;
     }
-    .hero h1 {
-      color: var(--clr-primary);
-      font-size: 2.25rem;
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-    }
-    .hero h2 {
-      font-size: 1rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: var(--clr-primary);
-      letter-spacing: 0.06em;
-      margin-bottom: 2rem;
-    }
-    .buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+    .hero h1 { color: var(--clr-primary); font-size: 2.5rem; margin: 0 0 2rem; }
+    .hero h2 { font-size: 1rem; font-weight: 600; letter-spacing: 0.06em; color: var(--clr-primary); margin: 0 0 2rem; }
+    .buttons { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
     .btn {
       padding: 0.6rem 1.2rem;
       background: var(--clr-primary);
@@ -107,83 +75,36 @@
       min-width: 160px;
       text-align: center;
     }
-    .btn:hover {
-      background: #e0551f;
-    }
+    .btn:hover { background: #1B5E20; }
     @media (min-width: 768px) {
       .hero-grid {
         grid-template-columns: 30% 70%;
         justify-items: start;
         text-align: left;
+        align-items: start; 
       }
       .hero-grid > div {
         justify-self: center;
         text-align: center;
       }
-      .buttons {
-        justify-content: center;
-      }
-      .hero h1 {
-        font-size: 2.5rem;
-      }
+      .buttons { justify-content: center; }
     }
-    /* WHY SECTION */
-    .why {
-      background: var(--clr-dark);
-      color: var(--clr-white);
-    }
-    .why-title {
-      color: var(--clr-primary);
-      font-size: 2rem;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: var(--gap);
-    }
-    .why-copy p {
-      line-height: 1.6;
-    }
-    /* ABOUT */
-    .about {
-      background: var(--clr-light);
-    }
-    .about-grid {
-      display: grid;
-      gap: var(--gap);
-      align-items: center;
-      text-align: center;
-    }
-    .about-grid img {
-      width: 220px;
-    }
-    .about h2 {
-      color: var(--clr-primary);
-      font-size: 1.9rem;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-    .about-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-    .about-buttons .btn {
-      min-width: 140px;
-    }
+    .why { background: var(--clr-dark); color: var(--clr-white); }
+    .why-title { color: var(--clr-primary); font-size: 2rem; text-transform: uppercase; text-align: center; margin-bottom: var(--gap); }
+    .why-copy p { line-height: 1.6; }
+    .about { background: var(--clr-light); }
+    .about-grid { display: grid; gap: var(--gap); align-items: start; text-align: center; }
+    .about-grid img { width: 220px; }
+    .about h2 { color: var(--clr-primary); font-size: 1.9rem; margin-bottom: 1rem; }
+    .about-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+    .about-buttons .btn { min-width: 140px; }
     @media (min-width: 768px) {
-      .about-grid {
-        grid-template-columns: 30% 70%;
-        text-align: left;
-      }
-      .about-buttons {
-        justify-content: center;
-      }
+      .about-grid { grid-template-columns: 30% 70%; text-align: left; }
+      .about-buttons { justify-content: center; }
     }
   </style>
 </head>
 <body>
-  <!-- HERO -->
   <header class="hero">
     <div class="wrap hero-grid">
       <img src="images/eBook_Cover.jpg" alt="Book cover – The Job of Landing a Job" />
@@ -198,7 +119,6 @@
       </div>
     </div>
   </header>
-  <!-- WHY -->
   <section class="why">
     <div class="wrap">
       <h2 class="why-title">Why the Best Don’t Always Get Hired</h2>
@@ -210,7 +130,6 @@
       </div>
     </div>
   </section>
-  <!-- ABOUT -->
   <section class="about">
     <div class="wrap about-grid">
       <img src="images/profile.jpg" alt="Portrait of Itay Sharfi" />
