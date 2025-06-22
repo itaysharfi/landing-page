@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Job of Landing a Job – Itay Sharfi</title>
+  <style>
+    :root {
+      --clr-primary: #ff6c26;
+      --clr-dark: #0d0149;
+      --clr-light: #eadcd8;
+      --clr-white: #ffffff;
+      --max-width: 720px;
+      --gap: 2rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--clr-dark);
+      line-height: 1.5;
+      background: var(--clr-white);
+    }
+    h1, h2 {
+      font-family: inherit;
+      margin: 0 0 1rem;
+      line-height: 1.15;
+    }
+    h1 {
+      font-weight: 400;
+    }
+    h2 {
+      font-weight: 800;
+    }
+    p {
+      margin: 0 0 1rem;
+      font-size: 0.95rem;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+    /* Container */
+    .wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    header, section {
+      padding: 3rem 0;
+    }
+    /* HERO */
+    .hero {
+      background: var(--clr-light);
+    }
+    .hero-grid {
+      display: grid;
+      gap: var(--gap);
+      justify-items: center;
+      text-align: center;
+    }
+    .hero-grid img {
+      width: 200px;
+    }
+    .label {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--clr-primary);
+      margin-bottom: 4rem;
+      font-size: 2rem;
+    }
+    .hero h1 {
+      color: var(--clr-primary);
+      font-size: 2.25rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+    .hero h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--clr-primary);
+      letter-spacing: 0.06em;
+      margin-bottom: 2rem;
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      background: var(--clr-primary);
+      color: var(--clr-white);
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      min-width: 160px;
+      text-align: center;
+    }
+    .btn:hover {
+      background: #e0551f;
+    }
+    @media (min-width: 768px) {
+      .hero-grid {
+        grid-template-columns: 30% 70%;
+        justify-items: start;
+        text-align: left;
+      }
+      .hero-grid > div {
+        justify-self: center;
+        text-align: center;
+      }
+      .buttons {
+        justify-content: center;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+    /* WHY SECTION */
+    .why {
+      background: var(--clr-dark);
+      color: var(--clr-white);
+    }
+    .why-title {
+      color: var(--clr-primary);
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: var(--gap);
+    }
+    .why-copy p {
+      line-height: 1.6;
+    }
+    /* ABOUT */
+    .about {
+      background: var(--clr-light);
+    }
+    .about-grid {
+      display: grid;
+      gap: var(--gap);
+      align-items: center;
+      text-align: center;
+    }
+    .about-grid img {
+      width: 220px;
+    }
+    .about h2 {
+      color: var(--clr-primary);
+      font-size: 1.9rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .about-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .about-buttons .btn {
+      min-width: 140px;
+    }
+    @media (min-width: 768px) {
+      .about-grid {
+        grid-template-columns: 30% 70%;
+        text-align: left;
+      }
+      .about-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <img src="images/eBook_Cover.jpg" alt="Book cover – The Job of Landing a Job" />
+      <div>
+        <span class="label">Itay Sharfi</span>
+        <h1>The Job of Landing a Job</h1>
+        <h2>The Insider’s Guide to Winning Tech’s Hiring Game</h2>
+        <div class="buttons">
+          <a class="btn" href="https://www.amazon.com/dp/B0FF1J1JCL" target="_blank" rel="noopener">Buy the Book</a>
+          <a class="btn" href="https://www.eventbrite.com/o/itay-sharfi-79401888573" target="_blank" rel="noopener">Attend an Event</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- WHY -->
+  <section class="why">
+    <div class="wrap">
+      <h2 class="why-title">Why the Best Don’t Always Get Hired</h2>
+      <div class="why-copy">
+        <p>Being good at your job is <strong>not</strong> the same as getting hired for it.</p>
+        <p>Many skilled professionals assume their experience speaks for itself, but hiring doesn’t work that way. It rewards those who understand how to signal value, build trust quickly, and navigate a system built to screen people out.</p>
+        <p>Drawing from two decades in the room where hiring decisions are made, <em>The Job of Landing a Job</em> teaches you how to approach the job search as its own craft. You’ll learn how to position your strengths, avoid common traps, and move through each stage with clarity and control.</p>
+        <p>If you’ve ever felt overlooked despite being qualified, this book will show you why, and what to do next.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="wrap about-grid">
+      <img src="images/profile.jpg" alt="Portrait of Itay Sharfi" />
+      <div>
+        <h2>Why Itay Sharfi Writes</h2>
+        <p>Itay writes to help good people get hired. After years hiring at Google, running a recruiting firm, and coaching thousands, he saw too many skilled candidates miss out—not for lack of talent, but for lack of strategy.</p>
+        <p>His writing gives job seekers the tools to take control: clear steps, honest insights, and a focus on what actually works. Whether through books, blogs, or his company <a href="https://applicationowl.com" style="color:var(--clr-primary);" target="_blank" rel="noopener">Application Owl</a>, his goal is simple—to level the playing field and turn potential into opportunity.</p>
+        <div class="about-buttons">
+          <a class="btn" href="https://www.linkedin.com/in/itaysharfi/" target="_blank" rel="noopener">Follow on LinkedIn</a>
+          <a class="btn" href="https://applicationowl.com" target="_blank" rel="noopener">Visit His Company</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
